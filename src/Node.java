@@ -44,7 +44,7 @@ public class Node {
             Node temp;
             temp = head;
             while (temp != null) {
-                System.out.print("Data value is: " + head.data + "-->");
+                System.out.print("Data value is: " + temp.data + "-->");
                 temp = temp.next;
             }
         }
