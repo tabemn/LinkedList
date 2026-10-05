@@ -8,13 +8,15 @@ public class Main {
         Node head;
         head = null;
 
-        System.out.println("Head value before invoking the method: " + head);
+       // System.out.println("Head value before invoking the method: " + head);
         head = Node.insertAtTheEnd(head, 10);
         Node.printList(head);
-        System.out.println("Head value after invoking the method: " + head);
+       // System.out.println("Head value after invoking the method: " + head);
         head = head.insertAtTheEnd(head, 20);
         Node.printList(head);
-     // head = head.insertAtTheEnd(head, 30);
+        // System.out.println("Head value after invoking the method: " + head);
+        head = head.insertAtTheEnd(head, 30);
+        Node.printList(head);
 
     }
 }
