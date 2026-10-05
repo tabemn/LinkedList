@@ -48,6 +48,6 @@ public class Node {
             temp = temp.next;
         }
     }
-        System.println();
+        System.out.println();
 }
 
