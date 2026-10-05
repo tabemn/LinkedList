@@ -21,11 +21,11 @@ public class Node {
         if (head == null) {
             Node n = new Node(data);
             head = n;
-            System.out.println("Head Value is: " + head);
-            System.out.println("Node n value is: " + n);
+         //   System.out.println("Head Value is: " + head);
+         //   System.out.println("Node n value is: " + n);
         } else {
             Node n = new Node(data);
-
+            //
             Node temp;
             temp = head;
             while (temp.next != null) {
@@ -45,10 +45,17 @@ public class Node {
             temp = head;
             while (temp != null) {
                 System.out.print("Data value is: " + temp.data + "-->");
+
+                if(temp.data == searchVal) {
+                    System.out.println("Search value is found");
+                    return true;
+                }
                 temp = temp.next;
             }
         }
         System.out.println();
+        return false;
     }
+
 }
 
