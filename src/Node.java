@@ -1,9 +1,9 @@
 // GitHub repository link: https://github.com/tabemn/LinkedList.git
 
 public class Node {
-// To store the data
+    // To store the data
     int data;
-// To hold a reference of Node type
+    // To hold a reference of Node type
     Node next;
 
     Node() {
@@ -18,17 +18,17 @@ public class Node {
 
     public static Node insertAtTheEnd(Node head, int data) {
         // Check if the linked list is currently empty
-        if(head == null) {
-            Node n =  new Node(data);
+        if (head == null) {
+            Node n = new Node(data);
             head = n;
             System.out.println("Head Value is: " + head);
             System.out.println("Node n value is: " + n);
-        }  else {
+        } else {
             Node n = new Node(data);
 
             Node temp;
             temp = head;
-            while(temp.next != null) {
+            while (temp.next != null) {
                 temp = temp.next;
             }
             temp.next = n;
@@ -38,16 +38,17 @@ public class Node {
     }
 
     public static void printList(Node head) {
-        if(head == null) {
+        if (head == null) {
             System.out.println("List is empty");
         } else {
             Node temp;
             temp = head;
-            while(temp != null) {
-            System.out.print("Data value is: " + head.data + "-->");
-            temp = temp.next;
+            while (temp != null) {
+                System.out.print("Data value is: " + head.data + "-->");
+                temp = temp.next;
+            }
         }
-    }
         System.out.println();
+    }
 }
 
